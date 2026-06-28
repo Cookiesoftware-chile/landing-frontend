@@ -1,142 +1,251 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  color: #0f172a;
+  background: linear-gradient(180deg, #eef2ff 0%, #ffffff 25%, #f8fafc 100%);
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }
 
-.main {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+.hero,
+.section,
+.sectionAlt,
+.contact {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+.hero {
+  padding: 88px 0 72px;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
+.badge {
+  display: inline-block;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  border: 1px solid #c7d2fe;
+  background: #eef2ff;
+  padding: 8px 14px;
+  font-size: 0.8rem;
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+  letter-spacing: 0.03em;
+  color: #3730a3;
+  text-transform: uppercase;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.hero h1 {
+  max-width: 760px;
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 4.7vw, 3.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
+.hero p {
+  max-width: 720px;
+  margin-bottom: 32px;
+  color: #334155;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
 }
 
-.ctas {
+.heroCtas {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.primaryCta,
+.secondaryCta {
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.primaryCta {
+  background: #312e81;
+  color: #ffffff;
+}
+
+.secondaryCta {
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.primaryCta:hover {
+  background: #1e1b4b;
+}
+
+.secondaryCta:hover {
+  border-color: #6366f1;
+  color: #312e81;
+}
+
+.section,
+.sectionAlt {
+  padding: 68px 0;
+}
+
+.section h2,
+.sectionAlt h2,
+.contact h2 {
+  margin-bottom: 26px;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.grid3 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.sectionAlt {
+  border-block: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.projects {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projectCard {
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  padding: 24px;
+}
+
+.projectCard h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.projectCard p {
+  margin-bottom: 16px;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.projectCard a {
+  display: inline-flex;
+  font-weight: 600;
+  color: #312e81;
+}
+
+.timeline {
+  display: grid;
+  gap: 18px;
+}
+
+.timeline article {
+  display: grid;
+  grid-template-columns: 48px 1fr;
   gap: 16px;
-  font-size: 14px;
+  align-items: start;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  padding: 20px;
 }
 
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
+.timeline span {
+  display: grid;
+  place-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #312e81;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.timeline h3 {
+  margin-bottom: 10px;
+}
+
+.timeline p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.serviceList {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.serviceList li {
+  border-left: 4px solid #6366f1;
+  background: #eef2ff;
+  border-radius: 10px;
+  padding: 14px 16px;
   font-weight: 500;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.contact {
+  padding: 74px 0 88px;
+  text-align: center;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.contact p {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  color: #334155;
+  line-height: 1.75;
+  font-size: 1.1rem;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
+.contact a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #312e81;
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
+@media (max-width: 900px) {
+  .grid3,
+  .projects {
+    grid-template-columns: 1fr;
   }
 
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
+  .hero,
+  .section,
+  .sectionAlt,
+  .contact {
+    width: min(1100px, 90vw);
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 64px;
   }
 
-  .page {
-    --background: #000;
-    --foreground: #000;
+  .section,
+  .sectionAlt,
+  .contact {
+    padding: 56px 0;
+  }
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .timeline article {
+    grid-template-columns: 1fr;
   }
 }
