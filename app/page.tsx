@@ -80,8 +80,9 @@ export default function Home() {
           <article className={styles.projectCard}>
             <h3>domanager.org</h3>
             <p>
-              Plataforma diseñada para optimizar la gestión y administración,
-              enfocada en confiabilidad, usabilidad y eficiencia operativa.
+              Es una plataforma de desarrollo organizacional, orientada
+              satisfacer necesidades de recursos humanos de pequeñas, medianas y
+              grades empresas.
             </p>
             <a
               href="https://domanager.org"
