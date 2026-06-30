@@ -87,7 +87,7 @@ export default function Home() {
             <p>
               Es una plataforma de desarrollo organizacional, orientada
               satisfacer necesidades de recursos humanos de pequeñas, medianas y
-              grades empresas.
+              grandes empresas.
             </p>
             <a
               href="https://domanager.org"

@@ -127,8 +127,10 @@
 }
 
 .sectionAlt {
-  border-block: 1px solid #e2e8f0;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
   background: #ffffff;
+  padding-inline: 20px;
 }
 
 .projects {
@@ -257,6 +259,10 @@
   .sectionAlt,
   .contact {
     padding: 56px 0;
+  }
+
+  .sectionAlt {
+    padding-inline: 14px;
   }
 
   .timeline article {
