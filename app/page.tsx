@@ -9,9 +9,9 @@ const qualities = [
       "Trabajamos con procesos claros, comunicación constante y compromiso total con cada entrega.",
   },
   {
-    title: "Calidad por encima de todo",
+    title: "IA aplicada con propósito",
     description:
-      "Cada producto se construye con estándares modernos, enfoque en rendimiento y mantenimiento a largo plazo.",
+      "Utilizamos inteligencia artificial para resolver problemas complejos y la implementamos en soluciones reales para mejorar productividad, soporte, análisis y toma de decisiones.",
   },
   {
     title: "Pensamiento de negocio",
@@ -22,6 +22,8 @@ const qualities = [
 
 const services = [
   "Desarrollo de plataformas web escalables",
+  "Implementación de funcionalidades con inteligencia artificial para productos existentes o nuevos",
+  "Automatización de procesos con IA para reducir tiempos operativos y errores manuales",
   "Integraciones y automatización de procesos",
   "Diseño de experiencia de usuario orientado a conversión",
   "Soporte evolutivo y mejora continua",
@@ -50,7 +52,10 @@ export default function Home() {
         <p>
           Somos un equipo especializado en productos digitales de alto impacto.
           Priorizamos la calidad técnica, la claridad en el proceso y una
-          ejecución impecable de principio a fin.
+          ejecución impecable de principio a fin. Además, utilizamos
+          inteligencia artificial para resolver problemas de negocio y la
+          integramos en las soluciones de nuestros clientes cuando genera valor
+          concreto.
         </p>
         <div className={styles.heroCtas}>
           <a className={styles.primaryCta} href="#proyectos">
@@ -145,7 +150,9 @@ export default function Home() {
               <h3>Construcción con estándares</h3>
               <p>
                 Desarrollamos con buenas prácticas, arquitectura limpia y foco
-                en seguridad y rendimiento.
+                en seguridad y rendimiento. Incorporamos IA de forma responsable
+                para potenciar funcionalidades, automatizar tareas y mejorar la
+                experiencia de usuarios y equipos internos.
               </p>
             </div>
           </article>
@@ -175,7 +182,8 @@ export default function Home() {
         <h2>Desarrollo de calidad para decisiones importantes</h2>
         <p>
           Si buscas un partner tecnológico profesional, estamos listos para
-          impulsar tu próximo proyecto.
+          impulsar tu próximo proyecto con ingeniería sólida y capacidades de
+          inteligencia artificial aplicadas a resultados reales.
         </p>
         <a href="mailto:contacto@cookiesoftware.cl">contacto@cookiesoftware.cl</a>
       </section>
