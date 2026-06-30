@@ -1,4 +1,6 @@
+import Image from "next/image";
 import styles from "./page.module.css";
+import cookieLogo from "./assets/icons8-galleta-100.png";
 
 const qualities = [
   {
@@ -29,7 +31,18 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <header className={styles.hero}>
-        <div className={styles.badge}>Cookie Software</div>
+        <div className={styles.brandLogo}>
+          <Image
+            src={cookieLogo}
+            alt="Logo de Cookie Software"
+            width={88}
+            height={88}
+            priority
+          />
+        </div>
+        <div className={styles.badge}>
+          Cookie Software
+        </div>
         <h1>
           Creamos software profesional para empresas que necesitan crecer con
           confianza.
@@ -82,11 +95,27 @@ export default function Home() {
           <article className={styles.projectCard}>
             <h3>administrabien.cl</h3>
             <p>
-              Solución digital orientada al orden financiero y administrativo,
-              con experiencia clara para usuarios y foco en resultados medibles.
+              Una solución tecnológica para gestionar gasto comunes,
+              actividades, comunicaciones entre personas pertenecientes a una
+              comunidad, sea con la estructura que sea.
             </p>
             <a
               href="https://administrabien.cl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visitar sitio
+            </a>
+          </article>
+
+          <article className={styles.projectCard}>
+            <h3>petsearcher.org</h3>
+            <p>
+              Plataforma para buscar mascotas perdidas y visibilizar aquellas
+              que están en resguardo temporal por personas que las encontraron.
+            </p>
+            <a
+              href="https://petsearcher.org"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -101,27 +130,33 @@ export default function Home() {
         <div className={styles.timeline}>
           <article>
             <span>1</span>
-            <h3>Diagnóstico estratégico</h3>
-            <p>
-              Entendemos objetivos, contexto y desafíos para definir una hoja de
-              ruta clara.
-            </p>
+            <div className={styles.timelineContent}>
+              <h3>Diagnóstico estratégico</h3>
+              <p>
+                Entendemos objetivos, contexto y desafíos para definir una hoja
+                de ruta clara.
+              </p>
+            </div>
           </article>
           <article>
             <span>2</span>
-            <h3>Construcción con estándares</h3>
-            <p>
-              Desarrollamos con buenas prácticas, arquitectura limpia y foco en
-              seguridad y rendimiento.
-            </p>
+            <div className={styles.timelineContent}>
+              <h3>Construcción con estándares</h3>
+              <p>
+                Desarrollamos con buenas prácticas, arquitectura limpia y foco
+                en seguridad y rendimiento.
+              </p>
+            </div>
           </article>
           <article>
             <span>3</span>
-            <h3>Entrega y evolución</h3>
-            <p>
-              Implementamos, medimos y mejoramos continuamente para sostener el
-              valor del producto.
-            </p>
+            <div className={styles.timelineContent}>
+              <h3>Entrega y evolución</h3>
+              <p>
+                Implementamos, medimos y mejoramos continuamente para sostener
+                el valor del producto.
+              </p>
+            </div>
           </article>
         </div>
       </section>

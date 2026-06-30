@@ -16,6 +16,16 @@
   padding: 88px 0 72px;
 }
 
+.brandLogo {
+  display: inline-flex;
+  margin-bottom: 14px;
+}
+
+.brandLogo :global(img) {
+  width: 88px;
+  height: 88px;
+}
+
 .badge {
   display: inline-block;
   margin-bottom: 16px;
@@ -185,6 +195,10 @@
 .timeline p {
   color: #475569;
   line-height: 1.7;
+}
+
+.timelineContent {
+  min-width: 0;
 }
 
 .serviceList {
