@@ -83,14 +83,14 @@ export default function Home() {
         <h2>Proyectos desarrollados</h2>
         <div className={styles.projects}>
           <article className={styles.projectCard}>
-            <h3>domanager.org</h3>
+            <h3>odmanager.org</h3>
             <p>
               Es una plataforma de desarrollo organizacional, orientada
               satisfacer necesidades de recursos humanos de pequeñas, medianas y
               grandes empresas.
             </p>
             <a
-              href="https://domanager.org"
+              href="https://odmanager.org"
               target="_blank"
               rel="noopener noreferrer"
             >
